@@ -261,3 +261,6 @@ button {
     line-height: 1.5;
     margin: 10px 0;
 }
+.admin-section {
+    display: none;
+}
