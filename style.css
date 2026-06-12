@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #2b1d16;
+  color: white;
+  z-index: 1000;
+}
+
+.navbar nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #c8a45d;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  .hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("images/cafe-banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background: #c8a45d;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2b1d16;
+}
+
+.section p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+}
+
+/* DARK SECTION */
+.dark {
+  background: #f5e6d3;
+}
+
+/* MENU GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  color: #c8a45d;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: #2b1d16;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c8a45d;
+}
+
+/* FOOTER */
+footer {
+  background: #2b1d16;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}/* BOOKING FORM */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 30px auto;
+  gap: 12px;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.booking-form button {
+  background: #c8a45d;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: #2b1d16;
+}
+
+#bookingMsg {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2b1d16;
+}#bookingList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.booking-card {
+  background: #f5e6d3;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.booking-card h4 {
+  margin-bottom: 8px;
+  color: #2b1d16;
+}/* BOOKING CARDS */
+#bookingList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.booking-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+}
+
+/* BUTTONS */
+button {
+  margin: 5px;
+}
+
+/* TOAST MESSAGE */
+#toast {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2b1d16;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    color: #2b1d16;
+}
+
+.card span {
+    color: #c8a45d;
+    font-weight: 600;
+    font-size: 18px;
+}
+.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
